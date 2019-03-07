@@ -99,7 +99,7 @@ func RegisterRestServiceHandler(ctx context.Context, mux *runtime.ServeMux, conn
 	return RegisterRestServiceHandlerClient(ctx, mux, NewRestServiceClient(conn))
 }
 
-// RegisterRestServiceHandler registers the http handlers for service RestService to "mux".
+// RegisterRestServiceHandlerClient registers the http handlers for service RestService to "mux".
 // The handlers forward requests to the grpc endpoint over the given implementation of "RestServiceClient".
 // Note: the gRPC framework executes interceptors within the gRPC handler. If the passed in "RestServiceClient"
 // doesn't go through the normal gRPC flow (creating a gRPC client etc.) then it will be up to the passed in
